@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Live Session project link submission form</h1>
+        <form id="submit-form" action="">
+
+            <div>
+                <label>Squad</label>
+                <select id="squad form2" size="1" onchange="makeSubmenu(this.value)">
+                    <option value="" disabled selected>Choose Squad</option>
+                    <option name="Squad">Squad43</option>
+                    <option name="Squad">Squad44</option>
+                    <option name="Squad">Squad45</option>
+                    <option name="Squad">Squad46</option>
+                    <option name="Squad">Squad47</option>
+                    <option name="Squad">Squad48</option>
+                    <option name="Squad">Squad49</option>
+                    <option name="Squad">Squad50</option>
+                    <option name="Squad">Squad51</option>
+                    <option name="Squad">Squad52</option>
+                    <option name="Squad">Squad53</option>
+                    <option name="Squad">Squad54</option>
+                    <option name="Squad">Squad55</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>UID</label>
+                <p>*Check your Slack for the UID</p>
+                <!-- <select id="name" size="1">
+                    <option value="" disabled selected>Who are you?</option>
+                    <option></option>
+                </select> -->
+                <input type="text" name="Name" id="form1">
+                <p id="name"></p>
+            </div>
+            <br>
+            <div>
+                <label>Week</label>
+                <select id="week">
+                    <option>Week 1</option>
+                    <option>Week 2</option>
+                    <option>Week 3</option>
+                    <option>Week 5</option>
+                    <option>Week 6</option>
+                    <option>Week 7</option>
+                    <option>Week 9</option>
+                    <option>Week 10</option>
+                    <option>Week 11</option>
+                    <option>Week 12</option>
+                    <option>Week 13</option>
+                </select>
+                <button type="submit" id="getLink">Go</button>
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP1">
+                <label>Dalgona Coffee</label>
+                <input type="text" name="Dalgona_Coffee" id="form3" placeholder="Dalgona Coffee" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP2">
+                <label>Astronaut Form</label>
+                <input type="text" name="Astronaut_Form" id="form4" placeholder="Astronaut Form" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP3">
+                <label>Emoji</label>
+                <input type="text" name="Emoji" id="form5" placeholder="Emoji" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP4">
+                <label>Earth</label>
+                <input type="text" name="Earth" id="form6" placeholder="Earth" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP5">
+                <label>Animax</label>
+                <input type="text" name="Animax" id="form7" placeholder="Animax" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP6">
+                <label>Numeron</label>
+                <input type="text" name="Numeron" id="form8" placeholder="Numeron" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP7">
+                <label>Lab BrrrGrrr</label>
+                <input type="text" name="BrrrGrrr" id="form9" placeholder="BrrrGrrr" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP8">
+                <label>Lab StoryTime</label>
+                <input type="text" name="Story_Time" id="form10" placeholder="Story_Time" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP9">
+                <label>Shape Generator</label>
+                <input type="text" name="Shape_Generator" id="form11" placeholder="Shape Generator" />
+            </div>
+            <br>
+            <div class="linkIP" id="linkIP10">
+                <label>Numeron2</label>
+                <input type="text" name="Numeron_2" id="form12" placeholder="Numeron_2" />
+            </div>
+            <br>
+            <div>
+                <button type="submit" id="submit-form" class="button submitButton">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container2">
+        <h1>Check your Links!!</h1>
+        <div>
+            <p>Name: </p>
+            <p id="sub1"></p>
+        </div>
+        <div>
+            <p>Squad No: </p>
+            <p id="sub2"></p>
+        </div>
+        <div>
+            <p>Dalgona Coffee Link: </p>
+            <p id="sub3"></p>
+        </div>
+        <div>
+            <p>Astronaut Form Link: </p>
+            <p id="sub4"></p>
+        </div>
+        <div>
+            <p>Emoji Link: </p>
+            <p id="sub5"></p>
+        </div>
+        <div>
+            <p>Earth Link: </p>
+            <p id="sub6"></p>
+        </div>
+        <div>
+            <p>Animax Link: </p>
+            <p id="sub7"></p>
+        </div>
+        <div>
+            <p>Numeron1 Link: </p>
+            <p id="sub8"></p>
+        </div>
+        <div>
+            <p>Lab Brrrgrrr: </p>
+            <p id="sub9"></p>
+        </div>
+        <div>
+            <p>Lab Story-time: </p>
+            <p id="sub10"></p>
+        </div>
+        <div>
+            <p>Shape Generator Link: </p>
+            <p id="sub11"></p>
+        </div>
+        <div>
+            <p>Numeron2 Link: </p>
+            <p id="sub12"></p>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

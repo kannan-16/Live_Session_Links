@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+body {
+    font-size: 1.3em;
+    background-image: url("https://c0.wallpaperflare.com/preview/354/766/467/pen-drawing-page-education.jpg");
+    background-size: 100% 100%;
+    font-family: 'Grandstander', cursive;
+    width: 100vw;
+    height: 100vh;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 0 5px;
+}
+
+label {
+    /* font-size: 16px; */
+    margin: 20px 50px 4px 0px;
+}
+
+.button {
+    display: block;
+    border-radius: 4px;
+    background-color: #ec7920;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Grandstander', cursive;
+    padding: 15px 20px;
+    /* margin: 40px auto; */
+}
+
+.container,
+.container2 {
+    border: black 2px solid;
+    padding: 50px;
+    margin: 0px 200px;
+    background-color: dodgerblue;
+}
+
+.container2 {
+    visibility: hidden;
+    background-color: crimson;
+    color: white;
+}
+
+.container2 div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container2 div p:nth-child(2) {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.linkIP {
+    visibility: hidden;
+}
